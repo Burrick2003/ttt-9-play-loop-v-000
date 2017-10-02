@@ -1,14 +1,12 @@
 # Helper Methods
 # the lab method
 def play(board)
-loop do
-  turn(board)
-  if check_full(board)
-    break
+if check_full(board) != true
+  loop do
+    turn
   end
 end
 end
-
 def check_full(board)
   count = 0
   until count==10
