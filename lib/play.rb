@@ -1,7 +1,7 @@
 # Helper Methods
 # the lab method
 def play(board)
-  until check_full(board) == true
+  until check_full(board) #== true
     turn(board)
     check_full(board)
   end
