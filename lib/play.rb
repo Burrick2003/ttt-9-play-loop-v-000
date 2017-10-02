@@ -1,7 +1,7 @@
 # Helper Methods
 # the lab method
 def play(board)
-  
+
 end
 
 def display_board(board)
