@@ -3,6 +3,20 @@
 def play(board)
 
 end
+def check_full(board)
+  count = 0
+  loop do
+    counter += 1
+    if position_taken(board, counter)
+      true
+      break
+    end
+    if counter == 9
+      false
+      break
+    end
+  end
+end
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
