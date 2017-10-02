@@ -1,6 +1,7 @@
 # Helper Methods
 # the lab method
 def play(board)
+count = 0
 loop do
   turn(board)
   if check_full(board)
@@ -11,15 +12,12 @@ end
 
 def check_full(board)
   count = 0
-  loop do
-    counter += 1
-    if position_taken(board, counter)
+  until counter==10
+    count += 1
+    if position_taken(board, count)
       true
-      break
-    end
-    if counter == 9
+    else
       false
-      break
     end
   end
 end
