@@ -4,6 +4,9 @@ def play(board)
 if check_full(board) != true
   loop do
     turn(board)
+    if check_full(board) == true
+      break
+    end
   end
 end
 end
