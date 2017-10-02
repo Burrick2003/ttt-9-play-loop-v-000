@@ -2,7 +2,9 @@
 # the lab method
 def play(board)
   turn(board)
-  check_full(board)
+  if check_full(board)
+    break
+  end
 end
 
 def check_full(board)
