@@ -6,7 +6,7 @@ def play(board)
   end
 end
 
-def check_full(board, flag)
+def check_full(board)
   count = 0
   until count==10
     count += 1
