@@ -14,8 +14,6 @@ def check_full(board)
     if position_taken?(board, count)
       true
       break
-    else
-      false
     end
   end
 end
