@@ -9,7 +9,7 @@ end
 
 def check_full(board)
   count = 0
-  until count==10
+  until count==9
     count += 1
     if position_taken?(board, count)
       true
