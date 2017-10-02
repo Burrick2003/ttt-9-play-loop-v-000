@@ -3,7 +3,7 @@
 def play(board)
 if check_full(board) != true
   loop do
-    turn
+    turn(board)
   end
 end
 end
