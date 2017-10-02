@@ -1,7 +1,6 @@
 # Helper Methods
 # the lab method
 def play(board)
-count = 0
 loop do
   turn(board)
   if check_full(board)
